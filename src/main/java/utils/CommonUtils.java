@@ -69,6 +69,20 @@ public class CommonUtils {
         }
         return result;
 
+        /*
+        the method below is used to convert local time to GMT time
+        DateFormat gmtFormat = new SimpleDateFormat();
+        TimeZone gmtTime = TimeZone.getTimeZone("GMT");
+        gmtFormat.setTimeZone(gmtTime);
+        System.out.println("Current DateTime in GMT : " + gmtFormat.format(new Date()));
+
+        or
+
+        SimpleDateFormat gmtFormat = new SimpleDateFormat();
+        gmtFormat.setTimeZone(TimeZone.getTimeZone(ID "GMT"););
+        String format = gmtFormat.format(new Date())
+         */
     }
+
 }
 

@@ -74,6 +74,13 @@ public class PlaceOrderPage extends BasePage{
     private void filloutProductInformation(){
         Select select = new Select(productDropDown);
         select.selectByIndex(CommonUtils.generateRandomNumber(0,2));
+
+        //String productSelected = select.getFirstSelectedOption().getText();
+        //ConfigReader.setProperty("product", productSelected);
+
+        //String quantity = generateRandomNumber(5,10) + "";
+        //ConfigReader.setProperty(#, quantity);
+
         productQuantity.sendKeys(CommonUtils.generateRandomNumber(5,10) + "");
         Assert.assertTrue(calculateBtn.isEnabled(), "Calculate is not enabled");
         calculateBtn.click();
